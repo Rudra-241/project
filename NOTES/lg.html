@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Login </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <div class="loginBox" id="d1">
+
+        <img src="images/user.png" class="user">
+
+        <form>
+            <p>Email</p>
+            <input type="text" name="" id="Email" placeholder="Enter Email">
+            <p>Password</p>
+            <input type="password" name="" id="password" placeholder="Enter Password">
+            <input type="button" id="b" name="" value="sign In" href="#" onclick="validate()">
+
+            <a href="#" onclick="register()">New To ....</a>
+        </form>
+    </div>
+
+
+
+    <script src="js/main.js">
+    </script>
+    <div id="info" style="display: none;">
+        <h3 id="nameinfo" style="font-size: 20px;">Name</h3>
+        <h3 id="continfo" style="font-size: 20px;">Contact info</h3>
+        <form id="workorhire">
+            <h3 style="font-size: 20px;">You want to </h3>
+            <input type="radio" name="basic" value="work" id="w"> Work<br>
+            <input type="radio" name="basic" value="hire" id="h"> Hire<br>
+
+
+        </form>
+        <form id="city">
+
+            <h3>You are in :</h3>
+
+            <p><label for="District"></label>
+
+                <select id="drpc" name="dist2">
+                  
+                    <option disabled selected>Select City</option><option value="Lucknow">Lucknow</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Agra">Agra</option>
+                </select></p>
+
+        </form>
+        <form id="land">
+            <p>
+                How much land is under your possesion
+                <input id="area" type="number" placeholder="Enter area in sq.ft"></p>
+        </form>
+        <form id="invest">
+            <p>
+                How much can u invest
+                <input id="money" type="text" value="Rs "></p>
+
+        </form> <input type="button" value="Submit" onclick="getDetails()">
+        <p id="tsh"></p>
+        <a href="#"></a>
+    </div>
+    <script src="js/main2.js"></script>
+    <div class="loginBox" id="d2" style="display: none;">
+
+        <img src="images/user.png" class="user">
+
+        <form>
+            <p>Name</p><input type="text" name="" id="name" placeholder="Enter your name">
+            <p>Email</p>
+            <input type="email" name="" id="Email" placeholder="Enter Email">
+            <p>Create Password</p>
+            <input type="password" name="" id="password" placeholder="Enter Password">
+            <p>Confirm Password</p>
+            <input type="password" name="" id="cpas" placeholder="Re-Enter Password">
+            <p>Contact no.</p> <input type="tel" placeholder="Enter Your No." id="cn" value="+91 ">
+            <input type="button" id="b" name="" value="sign In" href="#" onclick="save()">
+
+
+        </form>
+    </div>
+    <script src="js/main1.js"></script>
+
+</body>
+
+</html>
